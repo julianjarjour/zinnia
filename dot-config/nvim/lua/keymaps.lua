@@ -18,15 +18,13 @@ keymap('n', '<Leader>wh', '<C-w>h', {})
 keymap('n', '<Leader>w<up>', '<C-w>k', {})
 keymap('n', '<Leader>w<down>', '<C-w>j', {})
 
--- Navigate buffers
+-- Open/Save/Close/Navigate buffers
 keymap('n', '<Leader>es', ':buffers<cr>:b', {})
-
--- Open/Save/Close buffer
+keymap('n', '<Leader>ek', ':buffers<cr>:bd', {})
+keymap('n', '<Leader>eK', ':buffers<cr>:bd!', {})
 keymap('n', '<Leader>e.', ':e ', {})
 keymap('n', '<Leader>e,', ':e ~/', {})
 keymap('n', '<Leader>ew', '<cmd>w<cr>', {})
-keymap('n', '<Leader>ek', '<cmd>bd<cr>', {})
-keymap('n', '<Leader>eK', '<cmd>bd!<cr>', {})
 
 -- Quit nvim, forcefully
 keymap('n', '<Leader>qq', '<cmd>qa<cr>', {})

@@ -20,6 +20,8 @@ curl -O "https://dl.suckless.org/dwm/dwm-6.5.tar.gz"
 tar -xf "dwm-6.5.tar.gz"
 cd "$HOME/dwm-6.5" || exit 1
 cp "config.def.h" "config.h"
+cp "$here/patches/dwm-custom-6.5.diff" .
+patch < "dwm-custom-6.5.diff"
 su -c "make clean install"
 
 su -c 'install -Dm 644 "$0" "/etc/X11/xorg.conf.d/"' root "$here/etc/50-mouse-acceleration.conf"

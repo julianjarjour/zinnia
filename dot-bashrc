@@ -15,6 +15,7 @@ shopt -s autocd
 alias vi='nvim'
 alias ls='ls --color=auto'
 alias lsa='ls -A'
+alias g='git'
 
 s(){ su -c "${*@Q}"; }
 

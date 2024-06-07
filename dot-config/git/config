@@ -1,3 +1,25 @@
 [user]
     email = tonijarjour@posteo.com
     name = Toni Jarjour
+
+[alias]
+    a = add
+    b = branch
+    c = commit
+    d = diff
+    ds = diff --staged
+    dn = diff --no-index
+    h = stash
+    i = init
+    k = checkout
+    l = pull
+    m = merge
+    n = clone --depth 1
+    o = log
+    p = push
+    r = reset
+    s = status -s
+    t = remote
+    v = revert
+    w = show
+

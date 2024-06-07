@@ -12,10 +12,13 @@ PROMPT_COMMAND='history -a'
 shopt -s histappend
 shopt -s autocd
 
+alias g='git'
 alias vi='nvim'
 alias ls='ls --color=auto'
 alias lsa='ls -A'
-alias g='git'
+alias imv='nsxiv -a'
+alias copy='xclip -se c'
+alias wttr='curl wttr.in/Boston?m'
 
 s(){ su -c "${*@Q}"; }
 

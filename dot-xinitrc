@@ -1,0 +1,25 @@
+#!/bin/bash
+# ~/.xinitrc
+
+[ -f "$HOME/.Xresources" ] && xrdb -merge "$HOME/.Xresources"
+
+if [ -d /etc/X11/xinit/xinitrc.d ] ; then
+ for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+  [ -x "$f" ] && . "$f"
+ done
+ unset f
+fi
+
+xrandr --rate 144.00
+feh --bg-fill --no-fehbg "/mnt/phoebus/Images/Wallpapers/ghibli-clouds.jpg"
+
+dt() { echo -e "$(date +"%a, %b %d")"; }
+tm() { echo -e "$(date +"%I:%M %p")"; }
+
+while true; do
+    xsetroot -name "  $(dt)    $(tm)  "
+    sleep 12
+done &
+
+redshift -l 42.5:-71 -b 1.0:0.6 &
+exec dwm

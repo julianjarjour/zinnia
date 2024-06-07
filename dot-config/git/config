@@ -15,7 +15,7 @@
     l = pull
     m = merge
     n = clone --depth 1
-    o = log
+    o = log --oneline -n 20 --graph
     p = push
     r = reset
     s = status -s

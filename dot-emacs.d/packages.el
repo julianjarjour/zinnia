@@ -17,6 +17,8 @@
 
 (setq modus-themes-mixed-fonts t
       modus-themes-variable-pitch-ui t
+      modus-themes-italic-constructs t
+      modus-themes-bold-constructs t
       modus-themes-headings '((1 1.728) (2 1.44) (3 1.2)))
 (load-theme 'modus-vivendi)
 

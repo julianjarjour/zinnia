@@ -14,6 +14,7 @@
 
 (add-to-list 'default-frame-alist '(font . "Iosevka Nerd Font-15"))
 
+(setq frame-resize-pixelwise t)
 (setq gc-cons-threshold 134217728)
 
 ;;; early-init.el ends here

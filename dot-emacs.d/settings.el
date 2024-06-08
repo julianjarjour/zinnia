@@ -6,27 +6,38 @@
 
 ;;; Code:
 
-(setq user-full-name "Toni Jarjour")
-(setq user-mail-address "tonijarjour@posteo.com")
+(setq
+ user-full-name "Toni Jarjour"
+ user-mail-address "tonijarjour@posteo.com"
 
-(setq custom-file "~/.emacs.d/custom-file.el")
-(setq backup-directory-alist '(("." . "~/.saves")))
-(setq backup-by-copying t)
-(setq version-control t)
-(setq delete-old-versions t)
-(setq create-lockfiles nil)
+ custom-file "~/.emacs.d/custom-file.el"
+ backup-directory-alist '(("." . "~/.saves"))
+ backup-by-copying t
+ version-control t
+ delete-old-versions t
+ create-lockfiles nil
 
-(setq mouse-wheel-progressive-speed nil)
-(setq scroll-conservatively 101)
+ mouse-wheel-progressive-speed nil
+ scroll-conservatively 101
+ use-dialog-box nil
+ use-short-answers t
 
-(setq inhibit-startup-message t)
-(setq initial-scratch-message nil)
-(setq initial-major-mode 'fundamental-mode)
-(setq frame-title-format '("%b · Emacs"))
-(setq use-short-answers t)
-(setq use-dialog-box nil)
-(setq message-log-max nil)
-(kill-buffer "*Messages*")
+ inhibit-startup-message t
+ initial-scratch-message nil
+ initial-major-mode 'fundamental-mode
+ frame-title-format '("%b – Emacs")
+
+ browse-url-generic-program (executable-find "/usr/bin/firefox")
+ browse-url-browser-function 'browse-url-generic)
+
+(setq-default
+ fill-column 80
+ tab-width 2
+ indent-tabs-mode nil
+ indent-line-function 'insert-tab)
+
+(set-face-attribute 'fixed-pitch nil :font "Iosevka Nerd Font-15")
+(set-face-attribute 'variable-pitch nil :font "TeX Gyre Heros-15")
 
 (add-hook 'text-mode-hook 'variable-pitch-mode)
 (add-hook 'prog-mode-hook (lambda () (toggle-truncate-lines 1)))
@@ -40,17 +51,6 @@
 (global-display-line-numbers-mode 1)
 (global-prettify-symbols-mode 1)
 (set-language-environment "UTF-8")
-
-(set-face-attribute 'fixed-pitch nil :font "Iosevka Nerd Font-15")
-(set-face-attribute 'variable-pitch nil :font "TeX Gyre Heros-15")
-
-(setq-default fill-column 80)
-(setq-default tab-width 2)
-(setq-default indent-tabs-mode nil)
-(setq-default indent-line-function 'insert-tab)
-
-(setq browse-url-generic-program (executable-find "/usr/bin/firefox")
-      browse-url-browser-function 'browse-url-generic)
 
 (if (boundp 'after-focus-change-function)
     (add-function :after after-focus-change-function

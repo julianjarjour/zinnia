@@ -5,7 +5,6 @@ local options = {
   number = true,
   wrap = false,
   linebreak = true,
-  showmode = false,
   ignorecase = true,
   smartcase = true,
   lazyredraw = true,

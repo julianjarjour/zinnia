@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+set -euxo pipefail
 
 dotfiles="${PWD}"
 [[ ! -f "${dotfiles}/install.sh" ]] && exit 1

@@ -1,5 +1,8 @@
 .git
+LICENSE
+README.md
 install.sh
+chroot.sh
 programs
 patches
 etc

@@ -15,7 +15,7 @@ cd ~/.fn
 bash install.sh
 ```
 
-### Arch Linux Installation Steps
+### Arch Linux Installation
 
 Format partitions then mount. Use `fdisk` if not already partitioned.
 

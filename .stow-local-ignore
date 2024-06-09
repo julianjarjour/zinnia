@@ -3,6 +3,6 @@ LICENSE
 README.md
 install.sh
 chroot.sh
-programs
+packages
 patches
 etc

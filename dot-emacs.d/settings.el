@@ -30,6 +30,9 @@
  browse-url-generic-program (executable-find "/usr/bin/firefox")
  browse-url-browser-function 'browse-url-generic)
 
+(setq message-log-max nil)
+(kill-buffer "*Messages*")
+
 (setq-default
  fill-column 80
  tab-width 2
@@ -47,6 +50,7 @@
 (recentf-mode 1)
 (savehist-mode 1)
 (electric-pair-mode 1)
+(electric-indent-mode -1)
 (column-number-mode 1)
 (global-display-line-numbers-mode 1)
 (global-prettify-symbols-mode 1)

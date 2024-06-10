@@ -1,9 +1,13 @@
+debugedit
+fakeroot
 gcc
 make
 patch
+pkgconfig
 
 fd
 git
+isync
 man-db
 neovim
 npm

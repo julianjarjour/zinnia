@@ -18,3 +18,24 @@ git clone --depth 1 https://git.sr.ht/~tonijarjour/dotfiles ~/.fn
 cd ~/.fn
 bash install.sh
 ```
+
+### mu4e
+
+Make the mail directory.
+
+```
+mkdir -p ~/.local/mail/Inbox
+```
+
+Add a password to `mbsyncrc` then sync.
+
+```
+mbsync -a
+```
+
+Initialize and index the `mu` database.
+
+```
+mu init --maildir=~/.local/mail --my-address=tonijarjour@posteo.com
+mu index
+```

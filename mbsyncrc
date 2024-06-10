@@ -1,0 +1,20 @@
+IMAPStore posteo-remote
+Host posteo.de
+Port 993
+User tonijarjour@posteo.com
+Pass
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore posteo-local
+Path ~/.local/mail/
+Inbox ~/.local/mail/Inbox
+Subfolders Verbatim
+
+Channel posteo
+Far :posteo-remote:
+Near :posteo-local:
+Create Both
+Expunge None
+Patterns *
+SyncState *

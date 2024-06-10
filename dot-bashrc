@@ -21,8 +21,9 @@ alias copy='xclip -se c'
 alias wttr='curl wttr.in/Boston?m'
 
 s(){ su -c "${*@Q}"; }
+unlock(){ gpg -q --for-your-eyes-only --no-tty -d "${1}"; }
 
-bash_history_file=$(mktemp "$USER"_bash_historyXXXXXX)
-tac "$HOME/.bash_history" | awk '!x[$0]++' | tac > "$bash_history_file"
-mv "$bash_history_file" "$HOME/.bash_history"
+bash_history_file=$(mktemp "${USER}"_bash_historyXXXXXX)
+tac "${HOME}/.bash_history" | awk '!x[$0]++' | tac > "${bash_history_file}"
+mv "${bash_history_file}" "${HOME}/.bash_history"
 unset bash_history_file

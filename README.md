@@ -1,4 +1,4 @@
-### dotfiles
+## dotfiles
 
 Delete hidden files in the home directory to avoid a stow conflict.
 
@@ -21,15 +21,10 @@ bash install.sh
 
 ### mu4e
 
-Make the mail directory.
+Make the mail directory then retrieve the emails.
 
 ```
 mkdir -p ~/.local/mail/Inbox
-```
-
-Add a password to `mbsyncrc` then sync.
-
-```
 mbsync -a
 ```
 

@@ -13,11 +13,11 @@ fi
 xrandr --rate 144.00
 feh --bg-fill --no-fehbg "/mnt/phoebus/Images/Wallpapers/ghibli-clouds.jpg"
 
-dt() { echo -e "$(date +"%a, %b %d")"; }
-tm() { echo -e "$(date +"%I:%M %p")"; }
+dt() { echo "$(date +"%a, %b %d")"; }
+tm() { echo "$(date +"%I:%M %p")"; }
 
 while true; do
-    xsetroot -name "  $(dt)    $(tm)  "
+    xsetroot -name "   $(dt)   $(tm)   "
     sleep 12
 done &
 

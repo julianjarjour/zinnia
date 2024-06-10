@@ -1,9 +1,9 @@
 #!/bin/bash
 # ~/.bash_profile
 
-[[ -f "$HOME/.profile" ]] && source "$HOME/.profile"
-[[ -f "$HOME/.bashrc" ]] && source "$HOME/.bashrc"
+[[ -f "${HOME}/.profile" ]] && source "${HOME}/.profile"
+[[ -f "${HOME}/.bashrc" ]] && source "${HOME}/.bashrc"
 
-if [ ! "$DISPLAY" ]; then
-    [ "$XDG_VTNR" -eq 1 ] && startx > /dev/null 2>&1
+if [ ! "${DISPLAY}" ]; then
+    [ "${XDG_VTNR}" -eq 1 ] && startx > "/dev/null" 2>&1
 fi

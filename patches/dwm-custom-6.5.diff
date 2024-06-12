@@ -1,5 +1,5 @@
 diff --git a/config.h b/config.h
-index 9efa774..aad295c 100644
+index 9efa774..45b264c 100644
 --- a/config.h
 +++ b/config.h
 @@ -1,21 +1,21 @@
@@ -89,7 +89,7 @@ index 9efa774..aad295c 100644
 +	{ 0,              XF86XK_AudioMute,        spawn,          SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle") },
 +	{ MODKEY,                       XK_Return, spawn,          SHCMD("alacritty") },
 +	{ MODKEY,                       XK_Print,  spawn,          SHCMD("maim -su -m 10 | xclip -se c -t image/png") },
-+	{ MODKEY|ShiftMask,             XK_Print,  spawn,          SHCMD("maim -su -m 10 /mnt/phoebus/Images/Captures/$(date +%s).png") },
++	{ MODKEY|ShiftMask,             XK_Print,  spawn,          SHCMD("maim -su -m 10 /mnt/phoebus/Images/Captures/$(date +%s).jpg") },
 +	{ MODKEY|ControlMask,           XK_w,      spawn,          SHCMD("nsxiv -t /mnt/phoebus/Images/Wallpapers") },
 +	{ MODKEY,                       XK_v,      spawn,          SHCMD("zathura") },
 +	{ MODKEY,                       XK_r,      spawn,          SHCMD("firefox") },

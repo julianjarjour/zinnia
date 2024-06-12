@@ -30,8 +30,7 @@
 (setq dashboard-center-content t
       dashboard-items nil
       dashboard-display-icons-p nil
-      dashboard-startup-banner
-      "~/Images/.emacs.png")
+      dashboard-startup-banner "~/Images/.emacs.png")
 (dashboard-setup-startup-hook)
 
 (tj/install-package 'vertico)
@@ -44,8 +43,7 @@
 (tj/install-package 'orderless)
 (setq completion-styles '(orderless basic)
       completion-category-defaults nil
-      completion-category-overrides
-      '((file (styles partial-completion))))
+      completion-category-overrides '((file (styles partial-completion))))
 
 (tj/install-package 'consult)
 (setq consult-preview-key nil)

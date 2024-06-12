@@ -1,5 +1,5 @@
 diff --git a/config.h b/config.h
-index 9efa774..45b264c 100644
+index 9efa774..ae41fb7 100644
 --- a/config.h
 +++ b/config.h
 @@ -1,21 +1,21 @@
@@ -93,7 +93,7 @@ index 9efa774..45b264c 100644
 +	{ MODKEY|ControlMask,           XK_w,      spawn,          SHCMD("nsxiv -t /mnt/phoebus/Images/Wallpapers") },
 +	{ MODKEY,                       XK_v,      spawn,          SHCMD("zathura") },
 +	{ MODKEY,                       XK_r,      spawn,          SHCMD("firefox") },
-+	{ MODKEY,                       XK_t,      spawn,          SHCMD("firefox --new-tab /home/toni/Projects/Web/homepage/index.html") },
++	{ MODKEY,                       XK_t,      spawn,          SHCMD("firefox --new-tab /home/toni/Projects/web/homepage/index.html") },
 +	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
 +	{ MODKEY,                       XK_p,      togglescratch,  {.v = scratchpadcmd } },
 +	{ MODKEY,                       XK_f,      togglebar,      {0} },

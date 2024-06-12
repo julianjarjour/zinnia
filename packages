@@ -8,13 +8,14 @@ pkgconfig
 fd
 git
 isync
+lua-lpeg
 man-db
-neovim
 npm
 openssh
 renameutils
 ripgrep
 stow
+vis
 
 alacritty
 emacs

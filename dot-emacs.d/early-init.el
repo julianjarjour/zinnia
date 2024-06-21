@@ -3,7 +3,7 @@
 ;;; Commentary:
 
 ;; Early configurations to disable GUI elements, set a default font,
-;; and increase startup speed.
+;; and improve startup speed.
 
 ;;; Code:
 

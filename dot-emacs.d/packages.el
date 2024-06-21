@@ -55,7 +55,7 @@
 (require 'mu4e)
 (setq mu4e-change-filenames-when-moving t
       mu4e-get-mail-command "mbsync -a"
-      mu4e-update-interval (* 10 60)
+      mu4e-update-interval (* 10 59)
       mu4e-drafts-folder "/Drafts"
       mu4e-sent-folder "/Sent"
       mu4e-trash-folder "/Trash"

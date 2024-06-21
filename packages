@@ -3,7 +3,7 @@ fakeroot
 gcc
 make
 patch
-pkgconfig
+pkgconf
 
 fd
 git

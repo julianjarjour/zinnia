@@ -1,13 +1,9 @@
-debugedit
-fakeroot
 gcc
 make
 patch
-pkgconf
 
 fd
 git
-isync
 lua-lpeg
 man-db
 npm

@@ -52,19 +52,19 @@
 (setq corfu-auto t)
 (global-corfu-mode t)
 
-(require 'mu4e)
-(setq mu4e-change-filenames-when-moving t
-      mu4e-get-mail-command "mbsync -a"
-      mu4e-update-interval (* 10 59)
-      mu4e-drafts-folder "/Drafts"
-      mu4e-sent-folder "/Sent"
-      mu4e-trash-folder "/Trash"
-      mu4e-refile-folder "/Archive"
-
-      smtpmail-smtp-server "posteo.de"
-      smtpmail-smtp-service 465
-      smtpmail-stream-type 'ssl
-      message-send-mail-function 'smtpmail-send-it)
+;;(require 'mu4e)
+;;(setq mu4e-change-filenames-when-moving t
+;;      mu4e-get-mail-command "mbsync -a"
+;;      mu4e-update-interval (* 10 59)
+;;      mu4e-drafts-folder "/Drafts"
+;;      mu4e-sent-folder "/Sent"
+;;      mu4e-trash-folder "/Trash"
+;;      mu4e-refile-folder "/Archive"
+;;
+;;      smtpmail-smtp-server "posteo.de"
+;;      smtpmail-smtp-service 465
+;;      smtpmail-stream-type 'ssl
+;;      message-send-mail-function 'smtpmail-send-it)
 
 (tj/install-package 'evil)
 (setq evil-want-keybinding nil

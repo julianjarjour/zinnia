@@ -21,6 +21,14 @@ bash install.sh
 
 ### mu4e
 
+Install from the AUR.
+
+```
+s pacman -S debugedit fakeroot pkgconf isync
+git clone https://aur.archlinux.org/mu.git
+cd mu; makepkg -si
+```
+
 Make the mail directory then retrieve the emails.
 
 ```

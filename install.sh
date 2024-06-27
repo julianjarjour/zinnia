@@ -24,10 +24,6 @@ cp "${dotfiles}/patches/dwm-custom-6.5.diff" .
 patch < "dwm-custom-6.5.diff"
 su -c "make clean install"
 
-git clone "https://aur.archlinux.org/mu.git" "${HOME}/mu"
-cd "${HOME}/mu" || exit 1
-makepkg -si
-
 su -c 'install -Dm 644 "${0}" "/etc/X11/xorg.conf.d/"' root "${dotfiles}/etc/50-mouse-acceleration.conf"
 su -c 'install -Dm 644 "${0}" "/etc/fonts/conf.d/"' root "${dotfiles}/etc/66-noto-reject-nastaliq.conf"
 

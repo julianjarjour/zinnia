@@ -4,6 +4,8 @@
 [[ -f "${HOME}/.profile" ]] && source "${HOME}/.profile"
 [[ -f "${HOME}/.bashrc" ]] && source "${HOME}/.bashrc"
 
+su -c 'iwctl --passphrase marjar123 station wlan0 connect Kumiko; pacman -Syu'
+
 if [ ! "${DISPLAY}" ]; then
     [ "${XDG_VTNR}" -eq 1 ] && startx > "/dev/null" 2>&1
 fi
